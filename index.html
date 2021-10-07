@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Міні-експертна система - вибір ресторану</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link type="text/css" rel=stylesheet href="index.css"/>
+    <script type="text/javascript" src=index.js></script>
+    <script type="text/javascript" src="http://yandex.st/jquery/1.8.3/jquery.min.js"></script>
+</head>
+<body class="b-page">
+<div class="b-top-bar">
+    <div id=start-test  class="border-radius b-button b-page-shadows b-button-clickable b-page-transition">
+        Start!
+    </div>
+    <div id=data-format  class="border-radius b-button b-page-shadows b-button-clickable b-page-transition">
+        Form data
+    </div>
+    <span id="test-title" class="b-top-bar__title">Введіть текст або виберіть із списку існуючих та натисніть Start</span>
+</div>
+<div class="b-page-main">
+    <textarea id="test" class=" b-input__area b-page-transition border-radius left-side" placeholder="Введіть текст сюди. Після цього, натисніть Start"></textarea>
+    <div class="b-page-test-switch left-side">
+    </div>
+</div>
+<div class="b-page-test hide ">
+    <div class="b-page-test-items left-side">
+    </div>
+    <div class="b-page-questions left-side">
+        <div id="answers" class="b-page-questions__answers border-radius">
+        </div>
+        <div id=current-question class="b-page-questions__current border-radius">Поточне запитання!</div>
+        <input type="text" id=current-answer class="b-page-questions__answer" value="50" placeholder="Ймовірність" title="Введіть значення від 0 (ні) до 100 (так). Якщо не впевнені - введіть 50" />
+        <div id=complete-answer  class="b-button b-page-shadows border-radius b-page-transition b-button-clickable">
+            Відповісти!
+        </div>
+    </div>
+</div>
+</body>
+</html>
